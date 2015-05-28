@@ -1,0 +1,7 @@
+PORTFOLIO_APP_TITLE: 'Patrick Teague Portfolio'
+
+PORTFOLIO_USE_HTTPS: false
+
+PORTFOLIO_ENVIRONMENT: 'development'
+PORTFOLIO_HOST: 'http://localhost'
+PORTFOLIO_PORT: 8085

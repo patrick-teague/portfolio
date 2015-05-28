@@ -1,0 +1,74 @@
+.header
+  col(1)
+  height 40px
+  background-color transparent
+
+.header__container
+  span(1)
+  center($webWidth)
+  height 100%
+
+.header__logo-container, .header__controls-container
+  height 100%
+  box-sizing border-box
+
+.header__logo-container
+  span(.38)
+  padding-left 10px
+  padding-top 9px
+
+  .header__logo, .header__logo-title
+    float left
+
+  .header__logo
+    margin-right 7px
+    width 22px
+    height @width
+
+  .header__logo-title
+    font-size 22px
+    line-height @font-size
+    color $gray
+
+.header__controls-container
+  span(.62)
+  padding-right 50px
+  float right
+
+  +below($mobileWidth)
+    padding-right 10px
+
+  .header__logged-in, .header__logged-out
+    float right
+    height 100%
+
+  .header__logged-out
+
+    .header__button
+      color $gray
+      text-align center
+      font-size 16px
+      width 80px
+      height 100%
+      margin-top -1px
+      border-bottom solid 1px $headerWhite
+
+      &:hover
+        color: $darkRed
+        border-bottom solid 1px $darkRed
+
+    .header__register
+      margin-right 10px
+
+  .header__logged-in
+    margin-top 10px
+
+  .header__menubar-button
+    float right
+    cursor pointer
+    width 20px
+    height 20px
+    image('header_menubar_icon')
+
+    &--close
+      image('header_menubar_close_icon')

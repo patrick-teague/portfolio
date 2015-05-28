@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= appTitle %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="icon" href="https://s3-us-west-1.amazonaws.com/portfolio-resources/images/favicon.ico"> -->
+
+    <%- fonts %>
+    <%- vendorStyles %>
+    <%- styles %>
+  </head>
+  <body>
+
+    <script type="text/x-handlebars" data-template-name="application">
+      <div id="application__header">
+        {{render 'header'}}
+      </div>
+      <div id="application__content" {{bind-attr class="showMenubar:application__content--slide"}}{{action "closeMenubar"}}>
+        {{outlet}}
+        {{render 'footer'}}
+      </div>
+      <div id="application__menubar" {{bind-attr class="showMenubar:application__menubar--slide"}}>
+        {{render 'menubar'}}
+      </div>
+      <div id="application__modals" {{bind-attr class="showModals:application__modals--show"}}>
+        {{render 'modals'}}
+      </div>
+    </script>
+
+    <%- vendorScripts %>
+    <%- scripts %>
+    <%- templates %>
+
+    <script type="text/javascript">
+      if (!window.console) console = {log: function() {}};
+
+      App.initConfig();
+    </script>
+  </body>
+</html>

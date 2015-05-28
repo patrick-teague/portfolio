@@ -1,0 +1,104 @@
+.input__text, .input__textarea, .input__contenteditable
+  outline none
+  -webkit-appearance none
+  border-radius 0px
+  box-sizing border-box
+  border solid 1px $lightGray
+  color $lightGray
+  font-size 18px
+  padding 10px 20px
+
+  &:active, &:focus
+    color $darkGray
+    border-color @color
+
+  &.error
+    color $red
+    border-color @color
+
+  &.warning
+    color $yellow
+    border-color @color
+
+  &.info
+    color $blue
+    border-color @color
+
+  &.success
+    color $green
+    border-color @color
+
+.input__contenteditable
+  height 100%
+
+::-webkit-input-placeholder
+   color $placeholderGray
+
+:-moz-placeholder /* Firefox 18- */
+   color $placeholderGray
+
+::-moz-placeholder  /* Firefox 19+ */
+   color $placeholderGray
+
+:-ms-input-placeholder
+   color $placeholderGray
+
+.input__button
+  outline none
+  box-sizing border-box
+  border solid 1px $lightGray
+  color $lightGray
+  font-size 22px
+  padding 10px 20px
+  background-color transparent
+  text-transform uppercase
+
+  &:hover, &:focus
+    color $white
+    border-color $gray
+    background-color $lightGray
+
+  &.disabled
+    color $inactiveGray
+    border-color @color
+
+    &:hover, &:focus
+      color $inactiveGray
+      border-color @color
+      background-color transparent
+
+  &.success
+    color $green
+    border-color $green
+
+    &:hover, &:focus
+      color $white
+      border-color $darkGreen
+      background-color $green
+
+  &.warning
+    color $yellow
+    border-color $yellow
+
+    &:hover, &:focus
+      color $white
+      border-color $darkYellow
+      background-color $yellow
+
+  &.info
+    color $blue
+    border-color $blue
+
+    &:hover, &:focus
+      color $white
+      border-color $darkBlue
+      background-color $blue
+
+  &.error
+    color $red
+    border-color @color
+
+    &:hover, &:focus
+      color $white
+      border-color $darkRed
+      background-color $red

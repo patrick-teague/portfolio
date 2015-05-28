@@ -1,0 +1,52 @@
+.modals
+  span(1)
+  height 100%
+
+  .modals__background
+    span(1)
+    height 100%
+    background-color rgba(0, 0, 0, .1)
+
+  .modal__container
+    position relative
+    top 50%
+    transform translateY(-50%)
+    span(1)
+    center($modalWidth)
+
+  .modal
+    background-color $white
+    border solid 1px $lightGray
+    padding 20px 50px
+
+  .modal__title
+    color $lightGray
+    text-align center
+    font-size 30px
+
+  .modal__fields
+    span(1)
+    center(400px)
+    margin-top 4px
+
+  .modal__field
+    span(1)
+    stack()
+    margin-top 20px
+
+    &--thin
+      col(1/2)
+
+  .modal__field-label
+    font-size 14px
+
+  .modal__field-label, .modal__field-input
+    span(1)
+    stack()
+
+  .modal__field-input
+    margin-top 5px
+
+  .modal__button
+    float right
+    margin-top 5px

@@ -1,0 +1,17 @@
+div.modals
+  div.modals__background click="hideModals"
+    div.modal__container
+      if showContactModal
+        div.modal{bind-attr class="showContactModal:modal--show"} click="modalClicked bubbles=false"
+          div.modal__title Contact
+          div.modal__fields
+            div.modal__field
+              label.modal__field-label
+                | Email
+                = input class="input__text modal__field-input modal__field-input--first" valueBinding="controllers.contact.email" placeholder="sample@gmail.com" name="email" tabindex="1" autocapitalize="off"
+            div.modal__field
+              label.modal__field-label
+                | Message
+                = input class="input__text modal__field-input" valueBinding="controllers.contact.message" placeholder="Message" type="Hey, I'm reaching out cause..." name="message" tabindex="2" autocapitalize="off"
+            div.modal__field
+              button.modal__button.input__button.success tabindex="3" click="contact target='controllers.contact'" Send

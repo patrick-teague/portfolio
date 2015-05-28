@@ -1,0 +1,8 @@
+div.header
+  div.header__container
+    div.header__logo-container
+      link-to 'home'
+        div.header__logo.logo
+
+    div.header__controls-container
+      div.header__menubar-button{bind-attr class="showMenubar:header__menubar-button--close"} click="toggleMenubar bubbles=false"

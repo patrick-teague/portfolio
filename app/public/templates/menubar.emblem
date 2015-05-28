@@ -1,0 +1,9 @@
+div.menubar
+  div.menubar__content
+    ul.menubar__links
+      li.menubar__link click="goToWork"
+        span.menubar__link-icon.menubar__link-icon--work
+        span.menubar__link-text Work
+      li.menubar__link click="goToContact"
+        span.menubar__link-icon.menubar__link-icon--contact
+        span.menubar__link-text Contact

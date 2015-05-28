@@ -1,0 +1,19 @@
+test:
+  override:
+    - echo "NO TESTS YET!"
+  # pre:
+  #   - grunt config:testing
+  #   - grunt local:testing:
+  #       background: true
+  #   - sleep 2
+  #   - grunt tests:build
+  #   - grunt fixtures
+  # override:
+  #   - mocha app/tests/js/allTests.js
+
+deployment:
+
+  production:
+    branch: master
+    commands:
+      - export ENV=production && ./deploy.sh
