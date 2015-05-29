@@ -71,7 +71,6 @@ if nconf.get('PORTFOLIO_ENVIRONMENT') is 'development'
   scriptDirs = [
     'app',
     'models',
-    'helpers',
     'routes',
     'views',
     'components',

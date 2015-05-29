@@ -3,7 +3,7 @@ if [ "$ENV" = "production" ]
 then
   # Define some Application Variables
   APP_NAME='Patrick-Portfolio'
-  APP_FILE="application-$ENV.zip"
+  APP_FILE="$APP_NAME-$ENV.zip"
   VERSION_LABEL="$(date +"%s")-$ENV"
   APP_ENVIRONMENT_NAME='Patrick-Portfolio-Prod'
 
